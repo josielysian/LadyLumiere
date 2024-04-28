@@ -2,6 +2,8 @@ Lady Lumiere es un proyecto para Junior Achievement - Mujer Digital.
 
 Este proyecto consiste en la creacion de una plataforma para Peliculas, constando de diferentes secciones, para que el usuario pueda investigar sobre las peliculas disponibles, y tambien poder contactar los servicios de la plataforma.
 
+Fecha Inicial: 22/03/2024
+
 Proyecto Grupo 1 
 
 HTML:
