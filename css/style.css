@@ -1,0 +1,175 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+  }
+  
+  html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: none;
+  }
+
+
+
+/* Variables predefinidas de los colores */
+:root {
+    --color-primary: rgb(32, 33, 64);
+    --color-secondary: #48BBFA;
+    --color-background: #F9FEF7;
+    --color-accent: #7E76EF;
+    --color-neutral-light: #E3D7CC;
+    --color-neutral-dark: #2758D2;
+    --color-info: #6678D4;
+    --color-highlight: #3684AD;
+    --color-default: #FFFFFF;
+    --color-black: #000000;
+    /*--color-PrimamryReal: #0f2743;*/
+  }
+
+  body {
+    background-color: var(--color-default);
+    color: var(--color-black); /* para que el texto sea legible en el fondo oscuro */
+  }
+
+  .header img {
+    max-width: 100%; /* Ancho máximo del 100% */
+    height: auto; /* Mantener la proporción de la imagen */
+    margin-bottom: 20px; /* Puedes ajustar este valor según el espaciado deseado */
+}
+
+h2 {
+    font-size: 1.5em; /* Tamaño de fuente de 1.5em */
+    margin-bottom: 20px; /* Puedes ajustar este valor según el espaciado deseado */
+    font-weight: bold;
+  }
+
+
+/*Contenedor principal*/
+
+.image-container {
+  display: flex; /* Utilizar flexbox */
+  flex-direction:row ; /* Apilar elementos verticalmente */
+  justify-content: center; /* Centrar verticalmente los elementos */
+  align-items: center; /* Centrar horizontalmente los elementos */
+  width: 100%; /* Ancho del contenedor deseado */
+  background-color: #f1f3fc;
+  padding: 1rem;
+  margin: 0 auto; /* Centrar el contenedor horizontalmente */
+}
+
+
+.container {
+  width: 200px;
+  text-align: center; /* Centrar contenido horizontalmente */
+  position: relative; /* Posición relativa para que los elementos absolutos se posicionen correctamente */
+  overflow: hidden;
+}
+
+.container img {
+  width: 200px; /* Ancho deseado para todas las imágenes */
+  height: 348px; /* Mantener la proporción */
+  border-radius: 10px;
+  display: block; /* Para que la imagen esté centrada dentro del contenedor */
+  margin: 0 auto; /* Centrar la imagen horizontalmente */
+  height: 300px; /* Altura del contenedor deseado */
+ }
+
+ .container h5 {
+  margin-top: 10px; /* Espacio entre la imagen y el texto */
+  font-weight: bold;
+  width: 100%; /* Ancho igual al contenedor */
+  text-align: center; /* Centrar el texto horizontalmente */
+}
+
+.container p {
+  font-size: 0.9rem;
+}
+
+/*Ventana al dar clic*/
+.overlay {
+  /* Estilos para el overlay */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none; /* Inicialmente oculto */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.overlay.show {
+  display: flex; /* Mostrar el overlay cuando se agrega la clase "show" */
+}
+
+
+.overlay-content {
+  background-color: var(--color-primary);
+  padding: 40px; /* Aumenta el padding para que el contenido sea más grande */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Aumenta el tamaño de la sombra */
+  text-align: center; /* Centra el contenido horizontalmente */
+  color: var(--color-default); /* Cambia el color del texto a negro */
+  display: flex;
+  max-width: 1500px; /* Establece un ancho máximo para el overlay-content */
+  margin: 0 auto; /* Centra el overlay-content horizontalmente */
+}
+
+.overlay-img {
+  flex: 0 0 auto; /* Establece el tamaño del elemento a su contenido */
+  padding-right: 2rem;
+  height: auto; /* La imagen ocupará todo el alto del componente padre */
+  width: auto;
+}
+
+.block-content{
+  display: block;
+}
+
+.overlay-text {
+  flex: 1; /* Permite que este elemento ocupe el espacio restante */
+  text-align: justify;
+  font-size: 16px; /* Ajusta el tamaño del texto según tus necesidades */
+  margin-bottom: 20px;
+}
+
+
+.button {
+  margin-top: 20px;
+}
+
+.overlay-content h5 {
+  margin-bottom: 10px; /* Aumenta el espacio entre el título y el párrafo */
+  font-size: 24px; /* Aumenta el tamaño de la fuente del título */
+  font-weight: bold;
+  text-align: justify;
+}
+
+.overlay-content p {
+  font-size: 18px; /* Aumenta el tamaño de la fuente del párrafo */
+}
+
+/*Button*/
+.btn-trailer {
+  /* Estilos generales del botón */
+  background-color: #4CAF50; /* Color de fondo */
+  border: none; /* Sin borde */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Sin decoración de texto */
+  display: inline-block; /* Display en línea */
+  font-size: 16px; /* Tamaño de fuente */
+  margin: 4px 2px; /* Margen exterior */
+  cursor: pointer; /* Cursor al pasar por encima */
+  border-radius: 8px; /* Borde redondeado */
+}
+
+
+
