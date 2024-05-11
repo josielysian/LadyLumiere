@@ -1,3 +1,11 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #be0b0b; /* Color de fondo romántico */
+    color: #e2d02a;
+  }
+
 header {
   background-color: #e67e2e;
   padding: 20px 0;
