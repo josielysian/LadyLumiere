@@ -1,0 +1,18 @@
+.image-container {
+    flex: 1; /* Hace que el contenido principal ocupe el espacio disponible */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333; 
+    color: white; 
+    padding: 20px 0; 
+    text-align: center; 
+    width: 100%; 
+}
+
+footer div {
+    margin: 0; 
+    font-size: 14px;
+}
+

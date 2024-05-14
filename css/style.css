@@ -34,6 +34,9 @@
   body {
     background-color: var(--color-default);
     color: var(--color-black); /* para que el texto sea legible en el fondo oscuro */
+    display: flex;
+    flex-direction: column;
+    
   }
 
   .header img {
@@ -60,7 +63,8 @@
   width: 100%; /* Ancho del contenedor deseado */
   background-color: #f1f3fc;
   padding: 1rem;
-  margin: 0 auto; /* Centrar el contenedor horizontalmente */
+  margin-top: 10px;    /* Margen superior de 10 píxeles */
+  margin-bottom: 20px; /* Margen inferior de 20 píxeles */
 }
 
 
